@@ -14,10 +14,13 @@ The data above should be downloaded into the directory data/ia369z/Palito/recon
 
 ### Dependencies
 
+Please set your environment to run on Python3, since this project was written
+and tested to run under Python3.
+
 You might need to install the following dependencies in order to run this
 project:
 
-- Numpy
+- numpy
 - h5py
 - matplotlib
 
