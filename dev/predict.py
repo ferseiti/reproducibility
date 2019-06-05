@@ -162,9 +162,9 @@ def show_slice(slice_num=256):
     srcnn_model = predict_model('9-3-5')
     srcnn_model.load_weights("../data/model/64-9-3-5_128-64-SRCNN_model_at_epoch_300.h5")
 
-    data = read_data("sub_data/sub_data_pen.h5")
+    data = read_data("../data/sub_data/sub_data_pen.h5")
 
-    label = read_data("ground_data/ground_data_pen.h5")
+    label = read_data("../data/ground_data/ground_data_pen.h5")
 
     new_data = numpy.empty((512, 512, 512, 1))
     for i in range(data.shape[0]):
