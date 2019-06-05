@@ -32,6 +32,17 @@ In order to install them, you can simply run:
 ```
 pip3 install -v numpy h5py matplotlib tensorflow keras opencv-python scipy==1.1.0
 ```
+
+### Running the paper
+
+One must start an instance of jupyter notebook on the root directory of their local copy of this repository.
+Then, change directory to deliver and open the file Final_Version.ipynb.
+From then on, the notebook should run.
+
+### What the notebook executes
+
+The notebook named Final_Version.ipynb runs the report of the experiments run on the data and displays some of the predictions, as well as the ground truth of the test data.
+
 ## Workflow
 
 <img src="figures/workflow.png" />
