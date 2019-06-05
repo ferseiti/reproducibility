@@ -8,8 +8,7 @@ All the files from the url above with h5 extension should be downloaded into
 the directory data/ia369z/Palito/
 
 The reconstructed tomographies can be found at the following url:
-https://figshare.com/s/586be72211bcf4a174cb
-
+https://figshare.com/projects/ia369z/64340
 The data above should be downloaded into the directory data/ia369z/Palito/recon
 
 ### Dependencies
