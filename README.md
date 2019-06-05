@@ -24,10 +24,12 @@ project:
 - h5py
 - matplotlib
 - scipy==1.1.0
+- tensorflow
+- keras
 
 In order to install them, you can simply run:
 ```
-pip3 install -v numpy h5py matplotlib scipy==1.1.0
+pip3 install -v numpy h5py matplotlib tensorflow keras scipy==1.1.0
 ```
 ## Workflow
 
