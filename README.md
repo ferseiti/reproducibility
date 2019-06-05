@@ -23,10 +23,11 @@ project:
 - numpy
 - h5py
 - matplotlib
+- scipy==1.1.0
 
 In order to install them, you can simply run:
 ```
-pip3 install -v numpy h5py matplotlib
+pip3 install -v numpy h5py matplotlib scipy==1.1.0
 ```
 ## Workflow
 
