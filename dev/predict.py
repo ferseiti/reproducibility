@@ -115,10 +115,11 @@ def remove_keymap_conflicts(new_keys_set):
                 keys.remove(key)
                 
 def multi_slice_viewer(volume1, volume2):
+
     remove_keymap_conflicts({'up', 'down'})
     fig, ax = plt.subplots(nrows=1, ncols=2)
     fig.set_figheight(5)
-    fig.set_figwidth(10)
+    fig.set_figwidth(8)
     
     ax[0].volume = volume1
     ax[0].index = volume1.shape[0] // 2
@@ -172,7 +173,7 @@ def show_slice(slice_num=256):
 
     #new_data = new_data.astype('float16')
 
-    prediction = srcnn_model.predict(new_data[slice_num:slice_num+1,:,:,:])
+    prediction = srcnn_model.predict(new_data[slice_num:slice_num+50,150:350,150:350,:])
 
     plt.figure(figsize=[15, 13])
     plt.subplot(221)
@@ -180,13 +181,15 @@ def show_slice(slice_num=256):
     plt.imshow(prediction[0, :, :, 0])
     plt.subplot(222)
     plt.title('Interpolated')
-    plt.imshow(new_data[slice_num,:,:,0])
+    plt.imshow(new_data[slice_num,150:350,150:350,0])
 
     plt.subplot(223)
     plt.title('Ground truth')
-    plt.imshow(label[slice_num, :, :])
+    plt.imshow(label[slice_num, 150:350, 150:350])
     plt.show()
-    return prediction
+
+    multi_slice_viewer(prediction[:, :, :, 0].transpose(), label[slice_num:slice_num+50, 150:350, 150:350].transpose())
+    return prediction, label[slice_num:slice_num+50, 150:350, 150:350]
     #ssim(label[:,6:-6,6:-6], prediction[:,:,:,0], data_range=label.max() - label.min())
 
     #ssim(label, new_data[:,:,:,0], data_range=label.max() - label.min())
@@ -194,7 +197,7 @@ def show_slice(slice_num=256):
 
 def show_volume():
 
-    get_ipython().run_line_magic('matplotlib', 'notebook')
+    #get_ipython().run_line_magic('matplotlib', 'notebook')
 
     # multi_slice_viewer(prediction[:,:,:,0].transpose())
     multi_slice_viewer(label.transpose(), prediction[:,:,:,0].transpose())
