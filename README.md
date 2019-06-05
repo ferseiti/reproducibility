@@ -28,3 +28,6 @@ In order to install them, you can simply run:
 ```
 pip3 install -v numpy h5py matplotlib
 ```
+## Workflow
+
+<img src="figures/workflow.png" />
