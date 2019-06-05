@@ -41,7 +41,7 @@ From then on, the notebook should run.
 
 ### What the notebook executes
 
-The notebook named Final_Version.ipynb runs the report of the experiments run on the data and displays some of the predictions, as well as the ground truth of the test data.
+The notebook named Final_Version.ipynb runs the report of the experiments on the data and displays some of the predictions, as well as the ground truth of the test data.
 
 The slice from where the prediction will run can be chosen. An additional of 50 slices will then be also included in the prediction and visualization of the result.
 
