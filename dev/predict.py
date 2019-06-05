@@ -170,10 +170,22 @@ def show_slice(slice_num=256):
     for i in range(data.shape[0]):
         new_data[i,:,:,0] = spm.imresize(data[i,:,:], size=(512, 512), interp='bicubic')
 
-    new_data = new_data.astype('float16')
+    #new_data = new_data.astype('float16')
 
     prediction = srcnn_model.predict(new_data[slice_num:slice_num+1,:,:,:])
 
+    plt.figure(figsize=[15, 13])
+    plt.subplot(221)
+    plt.title('Prediction')
+    plt.imshow(prediction[0, :, :, 0])
+    plt.subplot(222)
+    plt.title('Interpolated')
+    plt.imshow(new_data[slice_num,:,:,0])
+
+    plt.subplot(223)
+    plt.title('Ground truth')
+    plt.imshow(label[slice_num, :, :])
+    plt.show()
     return prediction
     #ssim(label[:,6:-6,6:-6], prediction[:,:,:,0], data_range=label.max() - label.min())
 
