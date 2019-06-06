@@ -1,6 +1,8 @@
 # ia369z
 ## Data
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ferseiti/reproducibility/master)
+
 The data being read within data_management.ipynb, for now, can be found at:
 https://figshare.com/s/c6fc5e1fdb95999c9402
 
