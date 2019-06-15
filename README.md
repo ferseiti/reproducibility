@@ -30,10 +30,11 @@ project:
 - tensorflow
 - keras
 - opencv-python
+- requests
 
 In order to install them, you can simply run:
 ```
-pip3 install -v numpy h5py matplotlib tensorflow keras opencv-python ipympl scikit-image scipy==1.1.0
+pip3 install -v requests numpy h5py matplotlib tensorflow keras opencv-python ipympl scikit-image scipy==1.1.0
 ```
 
 ### Running the paper
