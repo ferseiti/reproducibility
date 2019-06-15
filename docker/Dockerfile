@@ -4,7 +4,10 @@ LABEL maintainer="Fernando Furusato <ferseiti@gmail.com>"
 
 USER root
 
-RUN apt-get update && apt-get install -y python3-pip
+RUN sed -i 's;archive.ubuntu;br.archive.ubuntu;g' /etc/apt/sources.list
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-pip libgtk2.0-dev
     
 RUN /usr/bin/pip3 install -v matplotlib \
     jupyter \
@@ -16,8 +19,6 @@ RUN /usr/bin/pip3 install -v matplotlib \
     requests \
     opencv-python \
     scipy==1.1.0
-
-RUN apt-get update && apt-get install -y libgtk2.0-dev
 
 RUN mkdir /root/uploaded_data/
 
