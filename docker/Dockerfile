@@ -4,9 +4,9 @@ LABEL maintainer="Fernando Furusato <ferseiti@gmail.com>"
 
 USER root
 
-RUN apt-get update && apt-get install -y python3-pip && pip3 install -U pip
+RUN apt-get update && apt-get install -y python3-pip
     
-RUN /usr/local/bin/pip3 install -v matplotlib \
+RUN /usr/bin/pip3 install -v matplotlib \
     jupyter \
     scikit-image \
     numpy \
@@ -20,5 +20,7 @@ RUN apt-get update && apt-get install -y libgtk2.0-dev
 
 EXPOSE 8888
 WORKDIR /root/
+
+ENV DOCKER 1
 
 CMD jupyter notebook --no-browser --allow-root --ip=0.0.0.0
