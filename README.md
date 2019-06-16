@@ -17,19 +17,23 @@ Codename:	bionic
 Docker version 17.12.1-ce, build 7390fc6
 ```
 
-## Data
+This repository was also tested in mybinder environment, but did not run, due to its heavy processing. You could give it a try!
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ferseiti/reproducibility/master)
 
-The data being read within data_management.ipynb, for now, can be found at:
-https://figshare.com/s/c6fc5e1fdb95999c9402
+## Data
 
-All the files from the url above with h5 extension should be downloaded into
-the directory data/ia369z/Palito/
+The notebook within deliver/Final_Version.ipynb downloads the data in a tarbal and extracts it within the working directory. If that does not work, one can try and download them manually from figshare, using one of the following sources:
 
-The reconstructed tomographies can be found at the following url:
-https://figshare.com/projects/ia369z/64340
-The data above should be downloaded into the directory data/ia369z/Palito/recon
+The data.tar.gz that contains plotting info and 2 samples (basically this repository's data directory):
+https://ndownloader.figshare.com/files/15483431
+
+If one wishes to download the h5 separately, the data are all available within this project in figshare:
+https://figshare.com/account/home#/projects/64340
+
+The files named ground* must be downloaded within data/ground_data/ and the ones named sub*, within data/sub_data/
+
+If you are using the docker environment, it contains the data.tar.gz, so there is no need to download it.
 
 ## Dependencies
 
