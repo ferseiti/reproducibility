@@ -48,6 +48,20 @@ The notebook named Final_Version.ipynb runs the report of the experiments on the
 
 The slice from where the prediction will run can be chosen. An additional of 50 slices will then be also included in the prediction and visualization of the result.
 
+### Docker
+
+This work can be executed in a docker environment, with no previous dependencies, other than docker-ce (or docker.io) on your machine. Be aware, though, that in any case, this implementation is very demanding on the hardware.
+
+In order to run in a docker, with docker installed on your machine, this can be run like so:
+
+```
+docker run -it --rm -p 12345:8888 -v $PWD:/home ferseiti/jupyter:reproducible
+```
+
+Then, just access, through your browser, the address http://localhost:12345.
+
+Note that the port 12345 can be changed if 1234 is already in use by your OS.
+
 ## Workflow
 
 <img src="figures/workflow.png" />
