@@ -1,4 +1,22 @@
 # ia369z
+
+## Environment
+
+This work was mostly developed and executed within the following environment settings:
+
+```
+Python 3.6.5
+
+pip 9.0.1 from /usr/lib/python3/dist-packages (python 3.6)
+
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04 LTS
+Release:	18.04
+Codename:	bionic
+
+Docker version 17.12.1-ce, build 7390fc6
+```
+
 ## Data
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ferseiti/reproducibility/master)
@@ -13,7 +31,7 @@ The reconstructed tomographies can be found at the following url:
 https://figshare.com/projects/ia369z/64340
 The data above should be downloaded into the directory data/ia369z/Palito/recon
 
-### Dependencies
+## Dependencies
 
 Please set your environment to run on Python3, since this project was written
 and tested to run under Python3.
@@ -36,19 +54,19 @@ In order to install them, you can simply run:
 pip3 install -v requests numpy h5py matplotlib tensorflow keras opencv-python scikit-image scipy==1.1.0
 ```
 
-### Running the paper
+## Running the paper
 
 One must start an instance of jupyter notebook on the root directory of their local copy of this repository.
 Then, change directory to 'deliver' and open the file Final_Version.ipynb.
 From then on, the notebook should run.
 
-### What the notebook executes
+## What the notebook executes
 
 The notebook named Final_Version.ipynb runs the report of the experiments on the data and displays some of the predictions, as well as the ground truth of the test data.
 
 The slice from where the prediction will run can be chosen. An additional of 50 slices will then be also included in the prediction and visualization of the result.
 
-### Docker
+## Docker
 
 This work can be executed in a docker environment, with no previous dependencies, other than docker-ce (or docker.io) on your machine. Be aware, though, that in any case, this implementation is very demanding on the hardware.
 
