@@ -1,0 +1,10 @@
+scikit-image
+ipympl
+numpy
+h5py
+matplotlib
+scipy==1.1.0
+tensorflow
+keras
+opencv-python
+requests
