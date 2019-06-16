@@ -86,6 +86,7 @@ def read_data(file):
         data = numpy.array(hf.get('data'))
         return data
 
+# The multislice viewer was based out on the following tutorial: https://www.datacamp.com/community/tutorials/matplotlib-3d-volumetric-data
 
 def remove_keymap_conflicts(new_keys_set):
 
