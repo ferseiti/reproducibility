@@ -1,11 +1,11 @@
 import requests
 import h5py
 
-def download_hdf5(file_id, file_name=None):
+def download_figshare(file_id, file_name=None):
     
     downloaded = 0.0
     try:
-        article_url = 'https://api.figshare.com/v2/articles/8206559/files/{}'.format(file_id)
+        article_url = 'https://api.figshare.com/v2/articles/8281070/files/{}'.format(file_id)
         article_response = requests.get(article_url)
         
         name = article_response.json()['name']
