@@ -23,12 +23,12 @@ This repository was also tested in mybinder environment, but did not run, due to
 
 ## Data
 
-The notebook within deliver/Final_Version.ipynb downloads the data in a tarbal and extracts it within the working directory. If that does not work, one can try and download them manually from figshare, using one of the following sources:
+The notebook within deliver/Final_Version.ipynb downloads the data in a tarball and extracts it within the working directory. If that does not work, one can try and download them manually from figshare, using one of the following sources:
 
-The data.tar.gz that contains plotting info and 2 samples (basically this repository's data directory):
+* The data.tar.gz that contains plotting info and 2 samples (basically this repository's data directory):
 https://ndownloader.figshare.com/files/15483431
 
-If one wishes to download the h5 separately, the data are all available within this project in figshare:
+* If one wishes to download the h5 separately, the data are all available within this project in figshare:
 https://figshare.com/account/home#/projects/64340
 
 The files named ground* must be downloaded within data/ground_data/ and the ones named sub*, within data/sub_data/
