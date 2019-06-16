@@ -22,7 +22,6 @@ You might need to install the following dependencies in order to run this
 project:
 
 - scikit-image
-- ipympl
 - numpy
 - h5py
 - matplotlib
@@ -34,7 +33,7 @@ project:
 
 In order to install them, you can simply run:
 ```
-pip3 install -v requests numpy h5py matplotlib tensorflow keras opencv-python ipympl scikit-image scipy==1.1.0
+pip3 install -v requests numpy h5py matplotlib tensorflow keras opencv-python scikit-image scipy==1.1.0
 ```
 
 ### Running the paper
