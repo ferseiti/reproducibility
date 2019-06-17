@@ -66,13 +66,36 @@ From then on, the notebook should run.
 
 ## What the notebook executes
 
-The notebook named Final_Version.ipynb runs the report of the experiments on the data and displays some of the predictions, as well as the ground truth of the test data.
+The notebook named deliver/Final_Version.ipynb runs the report of the experiments on the data and displays some of the predictions, as well as the ground truth of the test data.
 
-The slice from where the prediction will run can be chosen. An additional of 50 slices will then be also included in the prediction and visualization of the result.
+The slice from where the prediction will run can be chosen. As default, an additional of 20 slices will then be also included in the prediction and visualization of the result. This can also be changed, but be aware that it might be demanding on your hardware.
+
+For the following configuration:
+
+```
+Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz
+              total        used        free      shared  buff/cache   available
+Mem:           7,7G        2,4G        3,4G        744M        1,9G        4,3G
+Swap:           14G        2,0G         12G
+```
+The program was not able to run for more than 25 additional slices.
+
+### Training the Network
+
+It is possible to run the training. The notebook within deliver/train-9-3-5-64.ipynb does so for the results presented.
+
+The training was executed on a server with 8 NVIDIA V100-32GB and the following setup:
+```
+Intel(R) Xeon(R) Gold 6134 CPU @ 3.20GHz
+
+              total        used        free      shared  buff/cache   available
+Mem:           1.0T        2.8G         96G         35M        908G        1.0T
+Swap:          975M        3.5M        972M
+```
 
 ## Docker
 
-This work can be executed in a docker environment, with no previous dependencies, other than docker-ce (or docker.io) on your machine. Be aware, though, that in any case, this implementation is very demanding on the hardware.
+This work can be executed in a docker environment, with no previous dependencies, other than docker-ce (or docker.io) on your machine.
 
 In order to run in a docker, with docker installed on your machine, this can be run like so:
 
