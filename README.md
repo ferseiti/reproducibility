@@ -97,13 +97,22 @@ Swap:          975M        3.5M        972M
 
 This work can be executed in a docker environment, with no previous dependencies, other than docker-ce (or docker.io) on your machine.
 
-In order to run in a docker, with docker installed on your machine, this can be run like so:
+In order to run in a docker, with docker installed on your machine:
 
+* Clone this repository, with:
+```
+git clone https://github.com/ferseiti/reproducibility
+```
+* Navigate to the cloned directory like so:
+```
+cd <path_to>/reproducibility
+```
+* Then run the docker:
 ```
 docker run -it --rm -p 12345:8888 -v $PWD:/home ferseiti/jupyter:reproducible
 ```
 
-Then, just access, through your browser, the address http://localhost:12345.
+Finally, just access, through your browser, the address http://localhost:12345.
 
 Note that the port 12345 can be changed if 1234 is already in use by your OS.
 
