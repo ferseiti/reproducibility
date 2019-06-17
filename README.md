@@ -107,6 +107,8 @@ Then, just access, through your browser, the address http://localhost:12345.
 
 Note that the port 12345 can be changed if 1234 is already in use by your OS.
 
+Once in the jupyter, open deliver/Final_Version.ipynb and run the paper.
+
 ## Workflow
 
 <img src="figures/workflow.png" />
