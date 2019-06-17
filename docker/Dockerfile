@@ -24,7 +24,7 @@ RUN mkdir /root/uploaded_data/
 
 #COPY data.tar.gz /root/uploaded_data/
 
-RUN tar /root/uploaded_data/data.tar.gz --directory /root/uploaded_data/
+#RUN tar /root/uploaded_data/data.tar.gz --directory /root/uploaded_data/
 
 EXPOSE 8888
 WORKDIR /root/
