@@ -114,7 +114,7 @@ docker run -it --rm -p 12345:8888 -v $PWD:/home ferseiti/jupyter:reproducible
 
 Finally, just access, through your browser, the address http://localhost:12345.
 
-Note that the port 12345 can be changed if 1234 is already in use by your OS.
+Note that the port 12345 can be changed if 12345 is already in use by your OS.
 
 Once in the jupyter, open deliver/Final_Version.ipynb and run the paper.
 
