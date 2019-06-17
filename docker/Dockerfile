@@ -7,7 +7,7 @@ USER root
 RUN sed -i 's;archive.ubuntu;br.archive.ubuntu;g' /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3-pip libgtk2.0-dev
+    python3-pip libgtk2.0-dev && pip3 install setuptools
     
 RUN /usr/bin/pip3 install -v matplotlib \
     jupyter \
@@ -22,7 +22,7 @@ RUN /usr/bin/pip3 install -v matplotlib \
 
 RUN mkdir /root/uploaded_data/
 
-COPY data.tar.gz /root/uploaded_data/
+#COPY data.tar.gz /root/uploaded_data/
 
 RUN tar /root/uploaded_data/data.tar.gz --directory /root/uploaded_data/
 
