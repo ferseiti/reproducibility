@@ -82,7 +82,13 @@ The program was not able to run for more than 25 additional slices.
 
 ### Training the Network
 
-It is possible to run the training. The notebook within deliver/train-9-3-5-64.ipynb does so for the results presented.
+DISCLAIMER: It is not recommended that one executes the training by this time. That is due to the heavy processing it does. For instance, with the setup presented below, the complete training took over 15h to execute. An execution with CPUs was not tested.
+
+It is possible to run the training. One should take the following steps to do so:
+
+- Run the notebook dev/prepare_data.ipynb
+- Verify that the file crop_data.h5 was generated
+- Run deliver/train-9-3-5-64.ipynb
 
 The training was executed on a server with 8 NVIDIA V100-32GB and the following setup:
 ```
