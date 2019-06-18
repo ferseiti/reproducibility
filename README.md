@@ -17,7 +17,7 @@ Codename:	bionic
 Docker version 17.12.1-ce, build 7390fc6
 ```
 
-This repository was also tested in mybinder environment, but did not run, due to its heavy processing. You could give it a try!
+This repository was also tested in mybinder environment, but did not run, due to its heavy processing. You could give it a try! (Note that the environment takes very long to build, so please be patient)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ferseiti/reproducibility/master)
 
