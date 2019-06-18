@@ -17,7 +17,7 @@ Codename:	bionic
 Docker version 17.12.1-ce, build 7390fc6
 ```
 
-This repository was also tested in mybinder environment, but did not run, due to its heavy processing. You could give it a try!
+This repository was also tested in mybinder environment, but did not run, due to its heavy processing. You could give it a try! (Note that the environment takes very long to build, so please be patient)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ferseiti/reproducibility/master)
 
@@ -114,7 +114,7 @@ docker run -it --rm -p 12345:8888 -v $PWD:/home ferseiti/jupyter:reproducible
 
 Finally, just access, through your browser, the address http://localhost:12345.
 
-Note that the port 12345 can be changed if 1234 is already in use by your OS.
+Note that the port 12345 can be changed if 12345 is already in use by your OS.
 
 Once in the jupyter, open deliver/Final_Version.ipynb and run the paper.
 
