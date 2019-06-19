@@ -1,5 +1,9 @@
 # ia369z
 
+This work was based on the following implementation: https://github.com/MarkPrecursor/SRCNN-keras.
+
+This is also an attempt of implementation of the following work: [Image Super-Resolution Using Deep Convolutional Networks](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html), also available in [Arxiv](https://arxiv.org/abs/1501.00092).
+
 ## Environment
 
 This work was mostly developed and executed within the following environment settings:
