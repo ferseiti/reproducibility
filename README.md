@@ -1,5 +1,9 @@
 # ia369z
 
+This work was based on the following implementation: https://github.com/MarkPrecursor/SRCNN-keras.
+
+This is also an attempt of implementation of the following work: [Image Super-Resolution Using Deep Convolutional Networks](http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html), also available in [Arxiv](https://arxiv.org/abs/1501.00092).
+
 ## Environment
 
 This work was mostly developed and executed within the following environment settings:
@@ -17,7 +21,7 @@ Codename:	bionic
 Docker version 17.12.1-ce, build 7390fc6
 ```
 
-This repository was also tested in mybinder environment, but did not run, due to its heavy processing. You could give it a try!
+This repository was also tested in mybinder environment, but did not run, due to its heavy processing. You could give it a try! (Note that the environment takes very long to build, so please be patient)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ferseiti/reproducibility/master)
 
@@ -82,7 +86,13 @@ The program was not able to run for more than 25 additional slices.
 
 ### Training the Network
 
-It is possible to run the training. The notebook within deliver/train-9-3-5-64.ipynb does so for the results presented.
+DISCLAIMER: It is not recommended that one executes the training by this time. That is due to the heavy processing it does. For instance, with the setup presented below, the complete training took over 15h to execute. An execution with CPUs was not tested.
+
+It is possible to run the training. One should take the following steps to do so:
+
+- Run the notebook dev/prepare_data.ipynb
+- Verify that the file crop_data.h5 was generated
+- Run deliver/train-9-3-5-64.ipynb
 
 The training was executed on a server with 8 NVIDIA V100-32GB and the following setup:
 ```
